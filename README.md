@@ -1,5 +1,7 @@
 # waktu
-Time utility CLI
+CLI to parse natural language time and print as timestamp.
+
+Only a thin wrapper for `github.com/tj/go-naturaldate` library.
 
 
 Example usages:
