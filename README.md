@@ -1,0 +1,2 @@
+# waktu
+Time utility CLI
