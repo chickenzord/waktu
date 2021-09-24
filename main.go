@@ -12,7 +12,7 @@ import (
 func main() {
 	text := strings.Join(os.Args[1:], " ")
 	if text == "" {
-		os.Exit(1)
+		text = "now"
 	}
 
 	t, err := naturaldate.Parse(text, time.Now())
@@ -21,5 +21,5 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println(t.Format(time.RFC3339Nano))
+	fmt.Println(t.Format("2006-01-02T15:04:05.000Z0700"))
 }
